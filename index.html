@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora simples feita com as tecnologias HTML CSS e JS">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <section class="calc">
+            <section class="display">
+                <div class="res" onmouseenter="mudar()">
+                    Números
+                </div>
+            </section>
+            <section class="buttons">
+                <div>
+                    <button value="7">7</button>
+                    <button value="8">8</button>
+                    <button value="9">9</button>
+                    <button value="+" class="sinais">+</button>
+                </div>
+                <div>
+                    <button value="4">4</button>
+                    <button value="5">5</button>
+                    <button value="6">6</button>
+                    <button value="-" class="sinais">-</button>
+                </div>
+                <div>
+                    <button value="1">1</button>
+                    <button value="2">2</button>
+                    <button value="3">3</button>
+                    <button value="x" class="sinais">x</button>
+                </div>
+                <div>
+                    <button value="c" class="limpar">c</button>
+                    <button value="0">0</button>
+                    <button  value="=" class="sinais" onclick="igual()">=</button>
+                    <button value="/" class="sinais">/</button>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>

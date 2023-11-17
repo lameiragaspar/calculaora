@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #CECECE;
+}
+main{
+    background-color: #b6b5b5;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.calc{
+    background-color: #CECECE;
+    width: 250px;
+    height: 400px;
+    padding: 10px;
+    box-shadow:5px 5px 10px #00000091, -5px -5px 10px #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section.display{
+    box-shadow: inset 3px 3px 3px #00000073,inset -3px -3px 3px #ffffff9d;
+    width: calc(100% - 30px);
+    height: 59px;
+    padding: 10px;
+    border-radius: 9px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+section.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.buttons div{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.buttons button{
+    font-weight: bolder;
+    width: 40px;
+    height: 40px;
+    margin: 5px 2px;
+    font-size: 16px;
+    border: 1px solid #ffffffd7;
+    border-radius: 9px;
+    box-shadow:3px 3px 3px #00000073, -3px -3px 3px #ffffff9d;
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    box-shadow:3px 3px 5px #ffffff9d, -3px -3px 3px #00000073;
+}
+button.sinais{
+    background-color: black;
+    color: white;
+    box-shadow: none;
+    border: none;
+}
+.sinais:active,
+.limpar:active{
+    background-color: #fff;
+    color: #000;
+    transition: .2s;
+}
+button.limpar{
+    background-color: #F10200;
+    box-shadow: none;
+    border: none;
+}
