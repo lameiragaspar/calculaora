@@ -1,5 +1,13 @@
-let res = window.document.querySelector(".res")
+let display = window.document.querySelector(".display")
 
-function igual(){
-    res.innerHTML = 8
+function adicionaValores(value){
+    display.value += value
+}
+
+function calcular(n1, sinal, n2){
+    display.innerHTML = "Olá"
+}
+
+function limpar(){
+    display.innerHTML = "" 
 }
