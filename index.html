@@ -11,38 +11,39 @@
     <main>
         <section class="calc">
             <section class="display">
-                <div class="display">
-
-                </div>
+                <input type="text"  placeholder="0" id="tela" disabled>
             </section>
             <section class="buttons">
                 <div>
-                    <button onclick="adicionaValores('7')">7</button>
-                    <button onclick="adicionaValores('8')">8</button>
-                    <button onclick="adicionaValores('9')">9</button>
-                    <button onclick="adicionaValores('+')" class="sinais" onclick="soma()">+</button>
+                    <button value="7" onclick="adicionaValores('7')">7</button>
+                    <button value="8" onclick="adicionaValores('8')">8</button>
+                    <button value="9" onclick="adicionaValores('9')">9</button>
+                    <button value="+" onclick="adicionaValores('+')" class="sinais" onclick="soma()">+</button>
                 </div>
                 <div>
-                    <button onclick="adicionaValores('4')">4</button>
-                    <button onclick="adicionaValores('5')">5</button>
-                    <button onclick="adicionaValores('6')">6</button>
-                    <button onclick="adicionaValores('-')" class="sinais" onclick="subtrai()">-</button>
+                    <button value="4" onclick="adicionaValores('4')">4</button>
+                    <button value="5" onclick="adicionaValores('5')">5</button>
+                    <button value="6" onclick="adicionaValores('6')">6</button>
+                    <button value="-" onclick="adicionaValores('-')" class="sinais" onclick="subtrai()">-</button>
                 </div>
                 <div>
-                    <button onclick="adicionaValores('1')">1</button>
-                    <button onclick="adicionaValores('2')">2</button>
-                    <button onclick="adicionaValores('3')">3</button>
-                    <button onclick="adicionaValores('x')" class="sinais" onclick="multiplica()">x</button>
+                    <button value="1" onclick="adicionaValores('1')">1</button>
+                    <button value="2" onclick="adicionaValores('2')">2</button>
+                    <button value="2" onclick="adicionaValores('3')">3</button>
+                    <button value="*" onclick="adicionaValores('*')" class="sinais" onclick="multiplica()">x</button>
                 </div>
                 <div>
                     <button class="limpar" onclick="limpar()">c</button>
-                    <button onclick="adicionaValores('0')">0</button>
+                    <button value="0" onclick="adicionaValores('0')">0</button>
                     <button class="sinais" onclick="calcular()">=</button>
-                    <button onclick="adicionaValores('/')" class="sinais" onclick="dividir()">/</button>
+                    <button value="/" onclick="adicionaValores('/')" class="sinais" onclick="dividir()">/</button>
                 </div>
             </section>
         </section>
     </main>
+    
+    <footer><a href="https://github.com/lameiragaspar" target="_blank"><p>Desenvolvido por &copy;Pedro_Lameira</p></a></footer>
+
     <script src="js/index.js"></script>
 </body>
 </html>

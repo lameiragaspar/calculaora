@@ -1,13 +1,30 @@
-let display = window.document.querySelector(".display")
+let display = document.getElementById("tela")
+let exprecao = ''
 
-function adicionaValores(value){
-    display.value += value
+function adicionaValores(valores){
+    if(display.value == 0 ){
+        exprecao = valores
+    }else{
+        exprecao += valores
+    }
+    display.value = exprecao
 }
+/*Os valores vêm direitamente dos botões!*/
+adicionaValores(valores)
 
-function calcular(n1, sinal, n2){
-    display.innerHTML = "Olá"
+function calcular(){
+    let res = eval(exprecao)
+
+    if(display.value == 0 || res == undefined){
+        window.alert(`Digite um número!`)
+        res = '0'
+    }else{
+        display.value = res
+        exprecao = res
+    } 
 }
 
 function limpar(){
-    display.innerHTML = "" 
+    display.value = "0" 
+    exprecao = ''
 }
