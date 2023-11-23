@@ -25,7 +25,7 @@ section.calc{
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 section.display{

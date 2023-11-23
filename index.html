@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Calculadora simples feita com as tecnologias HTML CSS e JS">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <title>Calculadora</title>
 </head>
@@ -18,32 +19,43 @@
                     <button value="7" onclick="adicionaValores('7')">7</button>
                     <button value="8" onclick="adicionaValores('8')">8</button>
                     <button value="9" onclick="adicionaValores('9')">9</button>
-                    <button value="+" onclick="adicionaValores('+')" class="sinais" onclick="soma()">+</button>
+                    <button value="+" onclick="adicionaValores('+')" class="sinais">+</button>
                 </div>
                 <div>
                     <button value="4" onclick="adicionaValores('4')">4</button>
                     <button value="5" onclick="adicionaValores('5')">5</button>
                     <button value="6" onclick="adicionaValores('6')">6</button>
-                    <button value="-" onclick="adicionaValores('-')" class="sinais" onclick="subtrai()">-</button>
+                    <button value="-" onclick="adicionaValores('-')" class="sinais">-</button>
                 </div>
                 <div>
                     <button value="1" onclick="adicionaValores('1')">1</button>
                     <button value="2" onclick="adicionaValores('2')">2</button>
                     <button value="2" onclick="adicionaValores('3')">3</button>
-                    <button value="*" onclick="adicionaValores('*')" class="sinais" onclick="multiplica()">x</button>
+                    <button value="*" onclick="adicionaValores('*')" class="sinais">x</button>
+                </div>
+                <div>
+                    
+                    <button value="0" onclick="adicionaValores('0')">0</button>
+                    <button value="(" onclick="adicionaValores('(')">(</button>
+                    <button value=")" onclick="adicionaValores(')')">)</button>
+                    <button value="/" onclick="adicionaValores('/')" class="sinais">/</button>
                 </div>
                 <div>
                     <button class="limpar" onclick="limpar()">c</button>
-                    <button value="0" onclick="adicionaValores('0')">0</button>
+                    <button class="limpar" onclick="deleta1()">Del</button>
+                    <button value="." onclick="adicionaValores('.')" class="sinais">.</button>
                     <button class="sinais" onclick="calcular()">=</button>
-                    <button value="/" onclick="adicionaValores('/')" class="sinais" onclick="dividir()">/</button>
+                    
                 </div>
             </section>
         </section>
     </main>
     
-    <footer><a href="https://github.com/lameiragaspar" target="_blank"><p>Desenvolvido por &copy;Pedro_Lameira</p></a></footer>
-
+    <footer>
+        <a href="https://github.com/lameiragaspar" target="_blank">
+            <p>Desenvolvido por &copy;Pedro_Lameira</p>
+        </a>
+    </footer>
     <script src="js/index.js"></script>
 </body>
 </html>
