@@ -13,13 +13,13 @@ function adicionaValores(valores){
             expressao = expressao.slice(0, -1) + valores
 
         } else {
-            expressao += valores;
+            expressao += valores
         }
     }
     display.value = expressao
 }
 /*Os valores vêm direitamente dos botões!*/
-adicionaValores(valores)
+adicionaValores(valorButton)
 
 /*Botão igual =*/
 function calcular(){
@@ -35,7 +35,7 @@ function calcular(){
         res = '0'
     }else{
         display.value = res
-        //expressao = res
+        expressao = res + ''
     } 
 }
 
